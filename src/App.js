@@ -17,9 +17,6 @@ const App = () => {
           path="/currentlocation"
           element={<WeatherForCurrentLocation />}
         />
-        {/* <Route path="/weather/:cityName">
-        <WeatherPage />
-      </Route> */}
       </Routes>
     </>
   );
