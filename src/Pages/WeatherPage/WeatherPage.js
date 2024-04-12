@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import ErrorModal from "../UI/ErrorModal"; // Import ErrorModal component
+import ErrorModal from "../../UI/ErrorModal/ErrorModal"; // Import ErrorModal component
 import "./WeatherPage.css";
 
 const WeatherPage = () => {

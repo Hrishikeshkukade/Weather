@@ -157,7 +157,7 @@ const CityTable = () => {
           {sortColumn === "name" && (sortDirection === "asc" ? "▲" : "▼")}
         </button>
         <button onClick={handleViewFavorites}>View Favorites</button> {/* Button to redirect to favorites */}
-        <button onClick={handleViewLocationWeather} className="location">Get weather for current location</button>
+        <button onClick={handleViewLocationWeather} className="locationbutton">Get weather for current location</button>
       </div>
       <table>
         <thead>

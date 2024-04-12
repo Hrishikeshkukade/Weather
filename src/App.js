@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import CityTable from "../src/Components/CityTable";
-import WeatherPage from "./Pages/WeatherPage";
-import FavoriteLocations from "./Components/FavoriteLocations";
-import WeatherForCurrentLocation from "./Components/WeatherForCurrentLocation";
+import CityTable from "./Components/CityTable/CityTable";
+import WeatherPage from "./Pages/WeatherPage/WeatherPage";
+import FavoriteLocations from "./Components/FavoriteLocations/FavoriteLocations";
+import WeatherForCurrentLocation from "./Components/WeatherForCurrentLocation/WeatherForCurrentLocation";
 
 const App = () => {
   return (
