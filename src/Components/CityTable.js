@@ -136,10 +136,13 @@ const CityTable = () => {
   const handleViewFavorites = () => {
     navigate("/favorites"); // Redirect to the favorites page
   };
+  const handleViewLocationWeather = () => {
+    navigate("/currentlocation"); // Redirect to the favorites page
+  };
 
   return (
     <div className="container" onScroll={handleScroll} ref={tableRef}>
-      <h1>Cities</h1>
+      <h1>Cities Weather</h1>
       <Autosuggest
         suggestions={getSuggestions(searchQuery)}
         onSuggestionsFetchRequested={() => {}}
@@ -154,6 +157,7 @@ const CityTable = () => {
           {sortColumn === "name" && (sortDirection === "asc" ? "▲" : "▼")}
         </button>
         <button onClick={handleViewFavorites}>View Favorites</button> {/* Button to redirect to favorites */}
+        <button onClick={handleViewLocationWeather} className="location">Get weather for current location</button>
       </div>
       <table>
         <thead>
