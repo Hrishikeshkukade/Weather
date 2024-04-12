@@ -19,9 +19,9 @@ npm start
 4.Open http://localhost:3000 to view it in the browser.
 
 ### Technologies Used
-React
-React Router
-Axios
-React Autosuggest
+React,
+React Router,
+Axios,
+React Autosuggest.
 
 
