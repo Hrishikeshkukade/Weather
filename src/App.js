@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import CityTable from "../src/Components/CityTable";
+import WeatherPage from "./Pages/WeatherPage";
+import FavoriteLocations from "./Components/FavoriteLocations";
+import WeatherForCurrentLocation from "./Components/WeatherForCurrentLocation";
+// import WeatherPage from "./WeatherPage";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+       <Route exact path="/" element={<CityTable />} />
+       <Route exact path="/weather/:cityName" element={<WeatherPage />} />
+       <Route exact path="favorites" element={<FavoriteLocations />} />
+       <Route exact path="/currentlocation" element={<WeatherForCurrentLocation/>} />
+      {/* <Route path="/weather/:cityName">
+        <WeatherPage />
+      </Route> */}
+    </Routes>
+    
+    </>
   );
-}
+};
 
 export default App;

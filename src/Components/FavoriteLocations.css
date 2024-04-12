@@ -1,0 +1,36 @@
+/* FavoriteLocations.css */
+
+.favorite-locations-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .favorite-location-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-location-name {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .favorite-location-name:hover {
+    text-decoration: underline;
+  }
+  
+  .remove-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-button:hover {
+    background-color: #d64531;
+  }
+  

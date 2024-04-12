@@ -1,0 +1,40 @@
+.weather-container {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white; /* Text color for weather info */
+  }
+  
+  .weather-info {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .weather-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .forecast-info {
+    margin-top: 20px;
+  }
+  
+  .forecast-item {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-item p {
+    margin: 5px 0;
+  }
+  
+  
+  
